@@ -13,7 +13,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
-public class main {
+public class Main {
     static DateTimeFormatter df= DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
     public static List<Chambre> chambres = new ArrayList<Chambre>()
@@ -57,6 +57,7 @@ public class main {
     static int choixMenu;
 
     public static void main(String[] args) {
+
         AfficherSousMenu(AfficherMenuPrincipal());
     }
     public static int AfficherMenuPrincipal()

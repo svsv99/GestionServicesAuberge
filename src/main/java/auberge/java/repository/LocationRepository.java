@@ -1,6 +1,5 @@
 package auberge.java.repository;
 
-import auberge.java.domain.Chambre;
 import auberge.java.domain.Location;
 
 import java.text.SimpleDateFormat;
@@ -10,8 +9,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
-import static auberge.java.main.main.chambres;
-import static auberge.java.main.main.clients;
+import static auberge.java.main.Main.chambres;
+import static auberge.java.main.Main.clients;
 
 public class LocationRepository {
     public Location AjouterLocation(List<Location> locations)

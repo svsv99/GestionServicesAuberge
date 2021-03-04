@@ -1,7 +1,5 @@
 package auberge.java.repository;
 
-import auberge.java.domain.Chambre;
-import auberge.java.domain.Client;
 import auberge.java.domain.Reservation;
 
 import java.text.SimpleDateFormat;
@@ -11,8 +9,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
-import static auberge.java.main.main.*;
-import static auberge.java.main.main.chambres;
+import static auberge.java.main.Main.*;
+import static auberge.java.main.Main.chambres;
 
 public class ReservationRepository {
 

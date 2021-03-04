@@ -16,6 +16,12 @@ public class Location {
         cptLocation++;
         idLocation = cptLocation;
     }
+
+    public Location(int id, String numeroLocation) {
+        this.idLocation = id;
+        this.numeroLocation = numeroLocation;
+    }
+
     public int getIdLocation() {
         return idLocation;
     }

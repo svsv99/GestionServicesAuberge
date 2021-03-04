@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5309499-f936-4423-aedc-ef7e67f9edcc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/auberge/java/repository/jdbc/DataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/auberge/java/repository/jdbc/MysqlDataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/auberge/java/repository/ram/ILocationRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/domain/Loyer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/main/main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/main/main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/main/main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/main/main$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/main/main$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/main/main$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/main/main$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/main/main$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/main/main$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/main/main$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/main/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/main/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/repository/LocationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/repository/LocationRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/repository/PaiementRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/repository/PaiementRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/domain/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/domain/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/main/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/repository/LocationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/repository/LocationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/repository/ReservationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/repository/ReservationRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -36,7 +35,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1oDZhdL2HKMWWB8wbwuCV4RN0I9" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -50,9 +51,14 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="auberge.java.repository.jdbc" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="auberge.java.main.main" />
+      <option name="MAIN_CLASS_NAME" value="auberge.java.main.Main" />
       <module name="services_auberge" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -71,12 +77,27 @@
       <updated>1612823241740</updated>
       <workItem from="1612823246420" duration="38989000" />
       <workItem from="1613163735851" duration="3795000" />
-      <workItem from="1613208363381" duration="2343000" />
+      <workItem from="1613208363381" duration="4474000" />
+      <workItem from="1613812908148" duration="979000" />
+      <workItem from="1614599483720" duration="1224000" />
+      <workItem from="1614894303521" duration="3001000" />
     </task>
+    <task id="LOCAL-00001" summary="Ajout d'une reservation">
+      <created>1613210747558</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1613210747558</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Ajout d'une reservation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout d'une reservation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="122" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1612873304483">
@@ -103,30 +124,34 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="334" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1612905777577" />
-    <state width="1306" height="217" key="GridCell.Tab.0.bottom" timestamp="1613209494782">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1614897501872">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="217" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1613209494782" />
-    <state width="1306" height="217" key="GridCell.Tab.0.center" timestamp="1613209494782">
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1614897501872" />
+    <state width="1306" height="217" key="GridCell.Tab.0.bottom" timestamp="1613216920750">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="217" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1613209494782" />
-    <state width="1306" height="217" key="GridCell.Tab.0.left" timestamp="1613209494782">
+    <state width="1306" height="217" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1613216920750" />
+    <state width="1306" height="217" key="GridCell.Tab.0.center" timestamp="1613216920750">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="217" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1613209494782" />
-    <state width="1306" height="217" key="GridCell.Tab.0.right" timestamp="1613209494782">
+    <state width="1306" height="217" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1613216920750" />
+    <state width="1306" height="217" key="GridCell.Tab.0.left" timestamp="1613216920750">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="217" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1613209494782" />
+    <state width="1306" height="217" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1613216920750" />
+    <state width="1306" height="217" key="GridCell.Tab.0.right" timestamp="1613216920750">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1306" height="217" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1613216920750" />
     <state x="184" y="6" key="SettingsEditor" timestamp="1612909505972">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1612909505972" />
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1613208409693">
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1613812918498">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1613208409693" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1613812918498" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1612879551663">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
