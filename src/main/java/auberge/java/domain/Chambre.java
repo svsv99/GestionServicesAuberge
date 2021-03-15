@@ -74,13 +74,13 @@ public class Chambre {
     }
 
 
-    public Chambre(String numChambre,String typeChambre, int prixChambre, String descriptionChambre,String statutChambre)
+    public Chambre(int idChambre,String numChambre,String typeChambre, int prixChambre, String descriptionChambre,String statutChambre)
     {
-        this.idChambre = cptChambre;
+        this.idChambre = idChambre;
         this.numChambre = numChambre;
         this.prixChambre = prixChambre;
         this.descriptionChambre = descriptionChambre;
         this.statutChambre = statutChambre;
-
+        this.typeChambre = typeChambre;
     }
 }

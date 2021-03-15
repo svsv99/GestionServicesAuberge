@@ -87,9 +87,10 @@ public class Client {
     public void setPassword(String password) {
         this.password = password;
     }
-    public Client(String matriculeClient, String nomClient,String prenomClient,
+    public Client(int idclient,String matriculeClient, String nomClient,String prenomClient,
                   String adresseClient,String emailClient,String telClient,String username,String password)
     {
+        this.idclient = idclient;
         this.matriculeClient = matriculeClient;
         this.emailClient = emailClient;
         this.nomClient = nomClient;

@@ -16,12 +16,12 @@ import java.util.Scanner;
 public class Main {
     static DateTimeFormatter df= DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
-    public static List<Chambre> chambres = new ArrayList<Chambre>()
+    /*public static List<Chambre> chambres = new ArrayList<Chambre>()
     {
         {add(new Chambre("CH-001","Simple", 90000, "description1","Libre"));}
         {add(new Chambre("CH-002","Double", 120000, "description2","Libre"));}
         {add(new Chambre("CH-003","Double", 120000, "description3","Libre"));}
-    };
+    };*/
     public static  List<Paiement> paiements = new ArrayList<Paiement>(){};
     public static  List<Facture> factures = new ArrayList<Facture>(){};
     public static  List<Consommation> consommations = new ArrayList<Consommation>()
@@ -30,14 +30,14 @@ public class Main {
         {add(new Consommation("REP-002","MAFE",2000,"Dispo"));}
         {add(new Consommation("REP-003","TIEB YAPP",4500,"Dispo"));}
     };
-    public static  List<Client> clients = new ArrayList<Client>()
+    /*public static  List<Client> clients = new ArrayList<Client>()
     {
         {add(new Client("CLIENT-001", "Salma","Djoumoi", "Dakar","salma01@gmail.com","772558877","svsv","passer"));}
         {add(new Client("CLIENT-002", "Diop","Mamadou", "Dakar","mamadou02@gmail.com","775554488","mamadou","passer"));}
         {add(new Client("CLIENT-003", "Salma","Djoumoi", "Dakar","salma01@gmail.com","772558877","svsv02","passer"));}
 
-    };
-    public static List<Location> locations = new ArrayList<Location>(){
+    };*/
+    /*public static List<Location> locations = new ArrayList<Location>(){
         {add(new Location("LOC-001",new Date(System.currentTimeMillis()),LocalDate.parse("09/02/2021", df),chambres.get(0),clients.get(0)));}
     };
     public static  List<Reservation> reservations = new ArrayList<Reservation>()
@@ -51,7 +51,7 @@ public class Main {
                 e.printStackTrace();
             }
         }
-    };
+    };*/
 
 
     static int choixMenu;
@@ -188,20 +188,20 @@ public class Main {
         {
             case 1:
                 //gerer l ajout
-                reservationRepository.AjouterReservation(reservations);
+                //reservationRepository.AjouterReservation(reservations);
                 break;
             case 2:
                 //gerer modifier
-                reservationRepository.ModifierReservation(reservations);
+                //reservationRepository.ModifierReservation(reservations);
 
                 break;
             case 3:
                 //gerer Affichage
-                reservationRepository.AfficherListeReservation(reservations);
+                //reservationRepository.AfficherListeReservation(reservations);
                 break;
             case 4:
                 //gerer Suppression
-                reservationRepository.SupprimerReservation(reservations);
+                //reservationRepository.SupprimerReservation(reservations);
                 break;
             case 5:
                 //gerer retour
@@ -237,15 +237,15 @@ public class Main {
         {
             case 1:
                 //gerer l ajout
-                chambreRepository.AjouterChambre(chambres);
+                //chambreRepository.AjouterChambre(chambres);
                 break;
             case 2:
                 //gerer Affichage
-                chambreRepository.AfficherListeChambre(chambres);
+                //chambreRepository.AfficherListeChambre(chambres);
                 break;
             case 3:
                 //gerer Modification
-                chambreRepository.ModifierChambre(chambres);
+                //chambreRepository.ModifierChambre(chambres);
                 break;
             case 4:
                 //gerer retour
@@ -282,15 +282,15 @@ public class Main {
         {
             case 1:
                 //gerer l ajout
-             locationRepository.AjouterLocation(locations);
+            // locationRepository.AjouterLocation(locations);
                 break;
             case 2:
                 //gerer affichage
-                locationRepository.AfficherListeLocation(locations);
+               // locationRepository.AfficherListeLocation(locations);
                 break;
             case 3:
                 //gerer modification
-                locationRepository.ModifierLocation(locations);
+                //locationRepository.ModifierLocation(locations);
                 break;
             case 4:
                 //gerer retour

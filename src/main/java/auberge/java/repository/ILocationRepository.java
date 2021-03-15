@@ -1,4 +1,4 @@
-package auberge.java.repository.ram;
+package auberge.java.repository;
 
 import auberge.java.domain.Location;
 

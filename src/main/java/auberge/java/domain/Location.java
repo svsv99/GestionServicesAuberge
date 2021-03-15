@@ -6,21 +6,25 @@ import java.util.Date;
 public class Location {
     private int idLocation;
     private String numeroLocation;
-    private Date dateLocation;
+    private LocalDate dateLocation;
     private LocalDate dateDepart;
     private static int cptLocation = 0;
-    private  Chambre chambre;
+    private  String chambre;
+    private String client;
+    /*private  Chambre chambre;
     private Client client;
+
+     */
     public Location()
     {
         cptLocation++;
         idLocation = cptLocation;
     }
 
-    public Location(int id, String numeroLocation) {
-        this.idLocation = id;
-        this.numeroLocation = numeroLocation;
-    }
+    //public Location(int id, String numeroLocation,Date dateLocation,) {
+       // this.idLocation = id;
+       // this.numeroLocation = numeroLocation;
+    //}
 
     public int getIdLocation() {
         return idLocation;
@@ -38,11 +42,11 @@ public class Location {
         this.numeroLocation = numeroLocation;
     }
 
-    public Date getDateLocation() {
+    public LocalDate getDateLocation() {
         return dateLocation;
     }
 
-    public void setDateLocation(Date dateLocation) {
+    public void setDateLocation(LocalDate dateLocation) {
         this.dateLocation = dateLocation;
     }
 
@@ -62,23 +66,25 @@ public class Location {
         Location.cptLocation = cptLocation;
     }
 
-    public Chambre getChambre() {
+    public String getChambre() {
         return chambre;
     }
 
-    public void setChambre(Chambre chambre) {
+    public void setChambre(String chambre) {
         this.chambre = chambre;
     }
 
-    public Client getClient() {
+    public String getClient() {
         return client;
     }
 
-    public void setClient(Client client) {
+    public void setClient(String client) {
         this.client = client;
     }
-    public Location(String numeroLocation, Date dateLocation, LocalDate dateDepart,  Chambre chambre,Client client)
+
+    public Location(int idLocation, String numeroLocation, LocalDate dateLocation, LocalDate dateDepart, String chambre, String client)
     {
+        this.idLocation = idLocation;
         this.numeroLocation = numeroLocation;
         this.dateLocation = dateLocation;
         this.dateDepart = dateDepart;

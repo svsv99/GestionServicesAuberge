@@ -6,15 +6,19 @@ import java.util.Date;
 public class Reservation {
     private int idReservation;
     private String numReservation;
-    private Date dateReservation;
+    private LocalDate dateReservation;
     private LocalDate dateArrivee;
     private LocalDate dateDepart;
     private Date datePayeArrhes;
     private int montantArrhes;
     private boolean annuler;
     private static int cptRservation = 0;
-    private  Chambre chambre;
+    private  String chambre;
+    private String client;
+    /*private  Chambre chambre;
     private Client client;
+
+     */
     public Reservation()
     {
         cptRservation++;
@@ -22,21 +26,7 @@ public class Reservation {
         montantArrhes = 40000;
     }
 
-    public Chambre getChambre() {
-        return chambre;
-    }
 
-    public void setChambre(Chambre chambre) {
-        this.chambre = chambre;
-    }
-
-    public Client getClient() {
-        return client;
-    }
-
-    public void setClient(Client client) {
-        this.client = client;
-    }
 
     public int getIdReservation() {
         return idReservation;
@@ -54,11 +44,11 @@ public class Reservation {
         this.numReservation = numReservation;
     }
 
-    public Date getDateReservation() {
+    public LocalDate getDateReservation() {
         return dateReservation;
     }
 
-    public void setDateReservation(Date dateReservation) {
+    public void setDateReservation(LocalDate dateReservation) {
         this.dateReservation = dateReservation;
     }
 
@@ -110,18 +100,28 @@ public class Reservation {
         Reservation.cptRservation = cptRservation;
     }
 
+    public String getChambre() {
+        return chambre;
+    }
 
-    public Reservation(String numReservation, Date dateReservation, LocalDate dateArrivee,
-            LocalDate dateDepart, Date datePayeArrhes, int montantArrhes, boolean annuler, Chambre chambre,
-            Client client)
+    public void setChambre(String chambre) {
+        this.chambre = chambre;
+    }
+
+    public String getClient() {
+        return client;
+    }
+
+    public void setClient(String client) {
+        this.client = client;
+    }
+
+    public Reservation(int idReservation, String numReservation, LocalDate dateReservation, LocalDate dateArrivee, String chambre, String client)
     {
+        this.idReservation = idReservation;
         this.numReservation = numReservation;
         this.dateReservation = dateReservation;
         this.dateArrivee = dateArrivee;
-        this.dateDepart = dateDepart;
-        this.datePayeArrhes = datePayeArrhes;
-        this.montantArrhes = montantArrhes;
-        this.annuler = annuler;
         this.chambre = chambre;
         this.client = client;
     }

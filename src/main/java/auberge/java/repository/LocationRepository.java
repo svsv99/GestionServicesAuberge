@@ -9,11 +9,12 @@ import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
-import static auberge.java.main.Main.chambres;
-import static auberge.java.main.Main.clients;
+//import static auberge.java.main.Main.chambres;
+//import static auberge.java.main.Main.clients;
 
 public class LocationRepository {
-    public Location AjouterLocation(List<Location> locations)
+
+    /* public Location AjouterLocation(List<Location> locations)
     {
         Location l = new Location();
         Scanner sc = new Scanner(System.in);
@@ -85,4 +86,6 @@ public class LocationRepository {
             chambres.remove(l);
         }
     }
+
+     */
 }

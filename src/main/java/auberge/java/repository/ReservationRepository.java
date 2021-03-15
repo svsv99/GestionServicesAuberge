@@ -10,11 +10,11 @@ import java.util.List;
 import java.util.Scanner;
 
 import static auberge.java.main.Main.*;
-import static auberge.java.main.Main.chambres;
+//import static auberge.java.main.Main.chambres;
 
 public class ReservationRepository {
 
-    public Reservation AjouterReservation(List<Reservation> reservations)
+    /*public Reservation AjouterReservation(List<Reservation> reservations)
     {
         Reservation r = new Reservation();
         Scanner sc = new Scanner(System.in);
@@ -39,6 +39,7 @@ public class ReservationRepository {
         return r;
     }
 
+
     public void AfficherListeReservation(List<Reservation> reservations)
     {
         for (Reservation r: reservations) {
@@ -55,7 +56,7 @@ public class ReservationRepository {
     }
 
 
-    public void ModifierReservation(List<Reservation> reservations)
+    /*public void ModifierReservation(List<Reservation> reservations)
     {
         Scanner sc = new Scanner(System.in);
         AfficherListeReservation(reservations);
@@ -84,6 +85,8 @@ public class ReservationRepository {
     }
 
 
+
+
     public void SupprimerReservation(List<Reservation> reservations){
         Scanner sc = new Scanner(System.in);
         AfficherListeReservation(reservations);
@@ -94,4 +97,6 @@ public class ReservationRepository {
             reservations.remove(r);
         }
     }
+
+     */
 }
