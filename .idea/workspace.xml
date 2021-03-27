@@ -2,83 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5309499-f936-4423-aedc-ef7e67f9edcc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/auberge/java/controller/ChambreController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/auberge/java/controller/ClientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/auberge/java/controller/LocationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/auberge/java/controller/ReservationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/auberge/java/repository/IClientRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/auberge/java/repository/jdbc/JdbcBasedChambreRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/auberge/java/repository/jdbc/JdbcBasedClientRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/auberge/java/repository/jdbc/JdbcBasedLocationRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/controller/OperateurController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/controller/OperateurController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/domain/Chambre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/domain/Chambre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/domain/Consommation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/domain/Facture.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/domain/Hotel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/domain/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/domain/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/domain/Paiement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/domain/Profil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/domain/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/domain/Reservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/domain/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/repository/ChambreRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/repository/ClientRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/repository/ConsommationRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/repository/FactureRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/repository/IChambreRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/repository/IChambreRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/repository/ILocationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/repository/ILocationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/repository/IReservationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/repository/IReservationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/repository/LocationRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/repository/PaiementRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/repository/ReservationRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/repository/jdbc/IClientRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/repository/jdbc/JdbcBasedChambreRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/repository/jdbc/JdbcBasedChambreRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/repository/jdbc/JdbcBasedClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/repository/jdbc/JdbcBasedClientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/repository/jdbc/JdbcBasedLocationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/repository/jdbc/JdbcBasedLocationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/repository/jdbc/JdbcBasedReservationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/repository/jdbc/JdbcBasedReservationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/service/DisplayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/service/DisplayService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/service/MenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/service/MenuService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/service/console/ConsoleDisplayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/service/console/ConsoleDisplayService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/service/console/ScannerMenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/service/console/ScannerMenuService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/auberge/java/repository/jdbc/JdbcBasedReservationRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/auberge/java/repository/jdbc/JdbcBasedReservationRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/auberge/java/repository/jdbc/MockDatasource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/auberge/java/repository/jdbc/MockDatasource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/controller/OperateurController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/controller/OperateurController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/domain/Chambre.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/domain/Chambre.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/domain/Consommation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/domain/Facture.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/domain/Hotel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/domain/Location.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/domain/Location.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/domain/Paiement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/domain/Profil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/domain/Reservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/domain/Reservation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/domain/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/main/main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/main/main$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/main/main$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/main/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/main/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/repository/ChambreRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/repository/ClientRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/repository/ConsommationRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/repository/FactureRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/repository/IChambreRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/repository/IChambreRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/repository/ILocationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/repository/ILocationRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/repository/IReservationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/repository/IReservationRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/repository/LocationRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/repository/PaiementRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/repository/ReservationRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/repository/jdbc/IClientRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/repository/jdbc/JdbcBasedChambreRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/repository/jdbc/JdbcBasedChambreRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/repository/jdbc/JdbcBasedClientRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/repository/jdbc/JdbcBasedClientRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/repository/jdbc/JdbcBasedLocationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/repository/jdbc/JdbcBasedLocationRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/repository/jdbc/JdbcBasedReservationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/repository/jdbc/JdbcBasedReservationRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/service/DisplayService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/service/DisplayService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/service/MenuService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/service/MenuService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/service/console/ConsoleDisplayService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/service/console/ConsoleDisplayService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/service/console/ScannerMenuService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/service/console/ScannerMenuService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/auberge/java/repository/jdbc/JdbcBasedReservationRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/auberge/java/repository/jdbc/JdbcBasedReservationRepositoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/auberge/java/repository/jdbc/JdbcBasedReservationRepositoryTest1.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +76,7 @@
       <recent name="D:\M1GL\JEE\services_auberge\src\main\java\auberge\java\domain" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JdbcBasedReservationRepositoryTest">
+  <component name="RunManager" selected="Application.ServiceAubergeApp">
     <configuration name="ServiceAubergeApp" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="auberge.java.ServiceAubergeApp" />
       <module name="services_auberge" />
@@ -278,7 +202,7 @@
       <workItem from="1616791923044" duration="393000" />
       <workItem from="1616792349722" duration="177000" />
       <workItem from="1616808642906" duration="3981000" />
-      <workItem from="1616834393942" duration="2849000" />
+      <workItem from="1616834393942" duration="3475000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout d'une reservation">
       <created>1613210747558</created>
@@ -377,22 +301,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1615851840810" />
-    <state width="1323" height="328" key="GridCell.Tab.0.bottom" timestamp="1616836515635">
+    <state width="1323" height="328" key="GridCell.Tab.0.bottom" timestamp="1616838057750">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="328" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1616836515635" />
-    <state width="1323" height="328" key="GridCell.Tab.0.center" timestamp="1616836515635">
+    <state width="1323" height="328" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1616838057750" />
+    <state width="1323" height="328" key="GridCell.Tab.0.center" timestamp="1616838057750">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="328" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1616836515635" />
-    <state width="1323" height="328" key="GridCell.Tab.0.left" timestamp="1616836515635">
+    <state width="1323" height="328" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1616838057750" />
+    <state width="1323" height="328" key="GridCell.Tab.0.left" timestamp="1616838057750">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="328" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1616836515635" />
-    <state width="1323" height="328" key="GridCell.Tab.0.right" timestamp="1616836515635">
+    <state width="1323" height="328" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1616838057750" />
+    <state width="1323" height="328" key="GridCell.Tab.0.right" timestamp="1616838057750">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="328" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1616836515635" />
+    <state width="1323" height="328" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1616838057750" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1615859782440">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

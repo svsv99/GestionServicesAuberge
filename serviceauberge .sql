@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  lun. 15 mars 2021 à 23:35
+-- Généré le :  sam. 27 mars 2021 à 10:47
 -- Version du serveur :  10.3.16-MariaDB
 -- Version de PHP :  7.3.6
 
@@ -37,6 +37,15 @@ CREATE TABLE `chambre` (
   `statutChambre` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Déchargement des données de la table `chambre`
+--
+
+INSERT INTO `chambre` (`idChambre`, `numChambre`, `typeChambre`, `descriptionChambre`, `prixChambre`, `statutChambre`) VALUES
+(1, 'CH004', 'Simple', 'Chambre simple pour une personne', 12000, 'Libre'),
+(2, 'CH005', 'Double', 'chambre pour deux personnes', 20000, 'Libre'),
+(3, 'CH-003', 'Simple', 'Chambre une personne', 12000, 'LIBRE');
+
 -- --------------------------------------------------------
 
 --
@@ -54,6 +63,13 @@ CREATE TABLE `client` (
   `username` varchar(100) NOT NULL,
   `password` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `client`
+--
+
+INSERT INTO `client` (`idclient`, `matriculeClient`, `nomClient`, `prenomClient`, `adresseClient`, `telClient`, `emailClient`, `username`, `password`) VALUES
+(1, 'CLI_001', 'Salma', 'Djoumoi', 'Medina', '77889090', 'sasa@gmail.com', 'svsv', 'passer');
 
 -- --------------------------------------------------------
 
@@ -98,7 +114,8 @@ CREATE TABLE `reservation` (
 
 INSERT INTO `reservation` (`idReservation`, `numReservation`, `dateReservation`, `dateArrivee`, `Chambre`, `Client`) VALUES
 (1, 'Res004', '2021-03-01', '2021-03-17', 'CH-006', 'Mamadou Diop'),
-(2, 'Res-005', '2021-02-09', '2021-03-02', 'CH-008', 'Honore Balsac');
+(2, 'Res-005', '2021-02-09', '2021-03-02', 'CH-008', 'Honore Balsac'),
+(3, 'RES-003', '2021-02-03', '2021-02-04', 'CH005', 'CLI_001');
 
 --
 -- Index pour les tables déchargées
@@ -109,6 +126,12 @@ INSERT INTO `reservation` (`idReservation`, `numReservation`, `dateReservation`,
 --
 ALTER TABLE `chambre`
   ADD PRIMARY KEY (`idChambre`);
+
+--
+-- Index pour la table `client`
+--
+ALTER TABLE `client`
+  ADD PRIMARY KEY (`idclient`);
 
 --
 -- Index pour la table `location`
@@ -130,19 +153,25 @@ ALTER TABLE `reservation`
 -- AUTO_INCREMENT pour la table `chambre`
 --
 ALTER TABLE `chambre`
-  MODIFY `idChambre` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idChambre` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=405;
+
+--
+-- AUTO_INCREMENT pour la table `client`
+--
+ALTER TABLE `client`
+  MODIFY `idclient` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=405;
 
 --
 -- AUTO_INCREMENT pour la table `location`
 --
 ALTER TABLE `location`
-  MODIFY `idLocation` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `idLocation` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=405;
 
 --
 -- AUTO_INCREMENT pour la table `reservation`
 --
 ALTER TABLE `reservation`
-  MODIFY `idReservation` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idReservation` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=405;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
