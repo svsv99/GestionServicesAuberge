@@ -6,7 +6,7 @@ import static org.mockito.Matchers.anyString;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-public class MockDatasource  implements DataSource{
+public class MockDatasource implements DataSource {
     public Connection createConnection() {
         Connection connection = mock(Connection.class);
         Statement statement = mock(Statement.class);

@@ -1,7 +1,5 @@
 package auberge.java.domain;
 
-import java.util.Scanner;
-
 public class Chambre {
     private int idChambre;
     private String numChambre;

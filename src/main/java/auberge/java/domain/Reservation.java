@@ -1,7 +1,6 @@
 package auberge.java.domain;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public class Reservation {
     private int idReservation;
@@ -9,7 +8,7 @@ public class Reservation {
     private LocalDate dateReservation;
     private LocalDate dateArrivee;
     private LocalDate dateDepart;
-    private Date datePayeArrhes;
+    private LocalDate datePayeArrhes;
     private int montantArrhes;
     private boolean annuler;
     private static int cptRservation = 0;
@@ -68,11 +67,11 @@ public class Reservation {
         this.dateDepart = dateDepart;
     }
 
-    public Date getDatePayeArrhes() {
+    public LocalDate getDatePayeArrhes() {
         return datePayeArrhes;
     }
 
-    public void setDatePayeArrhes(Date datePayeArrhes) {
+    public void setDatePayeArrhes(LocalDate datePayeArrhes) {
         this.datePayeArrhes = datePayeArrhes;
     }
 

@@ -2,7 +2,83 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5309499-f936-4423-aedc-ef7e67f9edcc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/auberge/java/controller/ChambreController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/auberge/java/controller/ClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/auberge/java/controller/LocationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/auberge/java/controller/ReservationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/auberge/java/repository/IClientRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/auberge/java/repository/jdbc/JdbcBasedChambreRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/auberge/java/repository/jdbc/JdbcBasedClientRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/auberge/java/repository/jdbc/JdbcBasedLocationRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/controller/OperateurController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/controller/OperateurController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/domain/Chambre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/domain/Chambre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/domain/Consommation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/domain/Facture.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/domain/Hotel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/domain/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/domain/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/domain/Paiement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/domain/Profil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/domain/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/domain/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/domain/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/repository/ChambreRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/repository/ClientRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/repository/ConsommationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/repository/FactureRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/repository/IChambreRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/repository/IChambreRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/repository/ILocationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/repository/ILocationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/repository/IReservationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/repository/IReservationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/repository/LocationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/repository/PaiementRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/repository/ReservationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/repository/jdbc/IClientRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/repository/jdbc/JdbcBasedChambreRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/repository/jdbc/JdbcBasedChambreRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/repository/jdbc/JdbcBasedClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/repository/jdbc/JdbcBasedClientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/repository/jdbc/JdbcBasedLocationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/repository/jdbc/JdbcBasedLocationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/repository/jdbc/JdbcBasedReservationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/repository/jdbc/JdbcBasedReservationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/service/DisplayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/service/DisplayService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/service/MenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/service/MenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/service/console/ConsoleDisplayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/service/console/ConsoleDisplayService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auberge/java/service/console/ScannerMenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auberge/java/service/console/ScannerMenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/auberge/java/repository/jdbc/JdbcBasedReservationRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/auberge/java/repository/jdbc/JdbcBasedReservationRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/auberge/java/repository/jdbc/MockDatasource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/auberge/java/repository/jdbc/MockDatasource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/controller/OperateurController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/controller/OperateurController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/domain/Chambre.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/domain/Chambre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/domain/Consommation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/domain/Facture.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/domain/Hotel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/domain/Location.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/domain/Location.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/domain/Paiement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/domain/Profil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/domain/Reservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/domain/Reservation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/domain/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/main/main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/main/main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/main/main$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/main/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/main/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/repository/ChambreRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/repository/ClientRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/repository/ConsommationRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/repository/FactureRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/repository/IChambreRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/repository/IChambreRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/repository/ILocationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/repository/ILocationRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/repository/IReservationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/repository/IReservationRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/repository/LocationRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/repository/PaiementRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/repository/ReservationRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/repository/jdbc/IClientRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/repository/jdbc/JdbcBasedChambreRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/repository/jdbc/JdbcBasedChambreRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/repository/jdbc/JdbcBasedClientRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/repository/jdbc/JdbcBasedClientRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/repository/jdbc/JdbcBasedLocationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/repository/jdbc/JdbcBasedLocationRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/repository/jdbc/JdbcBasedReservationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/repository/jdbc/JdbcBasedReservationRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/service/DisplayService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/service/DisplayService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/service/MenuService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/service/MenuService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/service/console/ConsoleDisplayService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/service/console/ConsoleDisplayService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auberge/java/service/console/ScannerMenuService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auberge/java/service/console/ScannerMenuService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/auberge/java/repository/jdbc/JdbcBasedReservationRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/auberge/java/repository/jdbc/JdbcBasedReservationRepositoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/auberge/java/repository/jdbc/JdbcBasedReservationRepositoryTest1.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,9 +88,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -47,20 +123,33 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/auberge/java/service" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="auberge.java.repository.jdbc" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="auberge.java.repository" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="auberge.java.controller" />
+      <recent name="auberge.java.main" />
+      <recent name="auberge.java" />
       <recent name="auberge.java.repository.jdbc" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\M1GL\JEE\services_auberge\src\main\java\auberge\java\service" />
+      <recent name="D:\M1GL\JEE\services_auberge\src\main\java\auberge\java\repository" />
+      <recent name="D:\M1GL\JEE\services_auberge\src\main\java\auberge\java\repository\jdbc" />
+      <recent name="D:\M1GL\JEE\services_auberge\src\main\java\auberge\java\repository\collection" />
+      <recent name="D:\M1GL\JEE\services_auberge\src\main\java\auberge\java\domain" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.JdbcBasedReservationRepositoryTest">
@@ -71,11 +160,56 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcBasedReservationRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JdbcBasedChambreRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="services_auberge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="auberge.java.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="auberge.java.repository.jdbc" />
+      <option name="MAIN_CLASS_NAME" value="auberge.java.repository.jdbc.JdbcBasedChambreRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcBasedClientRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="services_auberge" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="auberge.java.repository.jdbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="auberge.java.repository.jdbc" />
+      <option name="MAIN_CLASS_NAME" value="auberge.java.repository.jdbc.JdbcBasedClientRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcBasedLocationRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="services_auberge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="auberge.java.repository.jdbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="auberge.java.repository.jdbc" />
+      <option name="MAIN_CLASS_NAME" value="auberge.java.repository.jdbc.JdbcBasedLocationRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcBasedReservationRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="services_auberge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="auberge.java.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -86,30 +220,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcBasedReservationRepositoryTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JdbcBasedReservationRepositoryTest.getByIdShouldReturnPrestationWhenAvailableNotTrivial" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="services_auberge" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="auberge.java.repository.jdbc.*" />
+          <option name="PATTERN" value="auberge.java.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="auberge.java.repository.jdbc" />
-      <option name="MAIN_CLASS_NAME" value="auberge.java.repository.jdbc.JdbcBasedReservationRepositoryTest1" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="auberge.java.repository.jdbc.JdbcBasedReservationRepositoryTest" />
+      <option name="METHOD_NAME" value="getByIdShouldReturnPrestationWhenAvailableNotTrivial" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.ServiceAubergeApp" />
-      <item itemvalue="JUnit.JdbcBasedReservationRepositoryTest1" />
       <item itemvalue="JUnit.JdbcBasedReservationRepositoryTest" />
+      <item itemvalue="JUnit.JdbcBasedChambreRepositoryTest" />
+      <item itemvalue="JUnit.JdbcBasedReservationRepositoryTest.getByIdShouldReturnPrestationWhenAvailableNotTrivial" />
+      <item itemvalue="JUnit.JdbcBasedClientRepositoryTest" />
+      <item itemvalue="JUnit.JdbcBasedLocationRepositoryTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.JdbcBasedReservationRepositoryTest" />
-        <item itemvalue="JUnit.JdbcBasedReservationRepositoryTest1" />
+        <item itemvalue="JUnit.JdbcBasedLocationRepositoryTest" />
+        <item itemvalue="JUnit.JdbcBasedClientRepositoryTest" />
+        <item itemvalue="JUnit.JdbcBasedChambreRepositoryTest" />
+        <item itemvalue="JUnit.JdbcBasedReservationRepositoryTest.getByIdShouldReturnPrestationWhenAvailableNotTrivial" />
       </list>
     </recent_temporary>
   </component>
@@ -131,7 +272,13 @@
       <workItem from="1614894303521" duration="5269000" />
       <workItem from="1614899593473" duration="4304000" />
       <workItem from="1614954870106" duration="28022000" />
-      <workItem from="1615846111996" duration="5259000" />
+      <workItem from="1615846111996" duration="6663000" />
+      <workItem from="1616232368319" duration="3122000" />
+      <workItem from="1616623819312" duration="26278000" />
+      <workItem from="1616791923044" duration="393000" />
+      <workItem from="1616792349722" duration="177000" />
+      <workItem from="1616808642906" duration="3981000" />
+      <workItem from="1616834393942" duration="2849000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout d'une reservation">
       <created>1613210747558</created>
@@ -147,7 +294,21 @@
       <option name="project" value="LOCAL" />
       <updated>1614897553702</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Ajout d'une reservation">
+      <created>1615851797791</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1615851797791</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Ajout d'une reservation">
+      <created>1615851841781</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1615851841781</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +328,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Ajout d'une reservation" />
     <option name="LAST_COMMIT_MESSAGE" value="Ajout d'une reservation" />
   </component>
@@ -175,18 +337,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="122" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1612873304483" />
-    <state x="137" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614993491634">
+    <state x="137" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616792010426">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="137" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1614993491634" />
-    <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1615022298719">
+    <state x="137" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1616792010426" />
+    <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1616677988498">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728@0.0.1366.728" timestamp="1615022298719" />
-    <state x="829" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1614998532632">
+    <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728@0.0.1366.728" timestamp="1616677988498" />
+    <state x="829" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1616719411257">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="829" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1614998532632" />
+    <state x="829" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1616719411257" />
     <state x="413" y="139" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1615850401202">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -199,66 +361,70 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="395" y="289" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1612823393227" />
-    <state x="479" y="223" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1614983796217">
+    <state x="479" y="223" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1616709826538">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="479" y="223" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1614983796217" />
+    <state x="479" y="223" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1616709826538" />
     <state x="334" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1612905777577">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="334" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1612905777577" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1615851796717">
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1616809537422">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1615851796717" />
-    <state width="1323" height="220" key="GridCell.Tab.0.bottom" timestamp="1615850660931">
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1616809537422" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1615851840810">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1615850660931" />
-    <state width="1323" height="220" key="GridCell.Tab.0.center" timestamp="1615850660930">
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1615851840810" />
+    <state width="1323" height="328" key="GridCell.Tab.0.bottom" timestamp="1616836515635">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1615850660930" />
-    <state width="1323" height="220" key="GridCell.Tab.0.left" timestamp="1615850660929">
+    <state width="1323" height="328" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1616836515635" />
+    <state width="1323" height="328" key="GridCell.Tab.0.center" timestamp="1616836515635">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1615850660929" />
-    <state width="1323" height="220" key="GridCell.Tab.0.right" timestamp="1615850660930">
+    <state width="1323" height="328" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1616836515635" />
+    <state width="1323" height="328" key="GridCell.Tab.0.left" timestamp="1616836515635">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1615850660930" />
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1615849143413">
+    <state width="1323" height="328" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1616836515635" />
+    <state width="1323" height="328" key="GridCell.Tab.0.right" timestamp="1616836515635">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1615849143413" />
-    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1615849143413">
+    <state width="1323" height="328" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1616836515635" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1615859782440">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1615849143413" />
-    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1615849143413">
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1615859782440" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1615859782440">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1615849143413" />
-    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1615849143413">
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1615859782440" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1615859782440">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1615849143413" />
-    <state x="184" y="6" key="SettingsEditor" timestamp="1612909505972">
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1615859782440" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1615859782440">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1612909505972" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1615859782440" />
+    <state x="184" y="0" key="SettingsEditor" timestamp="1616791962166">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1616791962166" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1615001890267">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1615001890267" />
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1615846132497">
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1616834399198">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1615846132497" />
-    <state x="454" y="82" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1615850500075">
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1616834399198" />
+    <state x="454" y="82" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1616631109410">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="454" y="82" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728@0.0.1366.728" timestamp="1615850500075" />
+    <state x="454" y="82" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728@0.0.1366.728" timestamp="1616631109410" />
     <state x="425" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1614999573070">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

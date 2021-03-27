@@ -13,7 +13,6 @@ public class JdbcBasedChambreRepository implements IChambreRepository {
     public JdbcBasedChambreRepository(DataSource dataSource) {
         this.dataSource = dataSource;
     }
-
     @Override
     public Chambre[] getAll() {
         //requête sql pour récupèrer les infos
@@ -52,27 +51,60 @@ public class JdbcBasedChambreRepository implements IChambreRepository {
 
     @Override
     public Chambre getById(int id) {
-        String query = "SELECT * from chambre where id = ?";
+        String query = "SELECT * from chambre where idChambre = ?";
         try {
             Connection connection = dataSource.createConnection();
             PreparedStatement statement = connection.prepareStatement(query);
 
             statement.setInt(1, id);
             ResultSet rs = statement.executeQuery();
+            if(rs.next())
+            {
+                int retrievedidChambre = rs.getInt("idChambre");
+                String  retrievednumChambre = rs.getString("numChambre");
+                String  retrieveddescriptionChambre = rs.getString("descriptionChambre");
+                String retrievedstatutChambre = rs.getString("statutChambre");
+                String retrievedtypeChambre = rs.getString("typeChambre");
+                int retrievedprixChambre   = rs.getInt("prixChambre");
 
-            int retrievedidChambre = rs.getInt("idChambre");
-            String  retrievednumChambre = rs.getString("numChambre");
-            String  retrieveddescriptionChambre = rs.getString("descriptionChambre");
-            String retrievedstatutChambre = rs.getString("statutChambre");
-            String retrievedtypeChambre = rs.getString("typeChambre");
-            int retrievedprixChambre   = rs.getInt("prixChambre");
-
-            Chambre chambre = new Chambre(retrievedidChambre, retrievednumChambre,retrievedtypeChambre,retrievedprixChambre,retrieveddescriptionChambre,retrievedstatutChambre);
-            return chambre;
+                Chambre chambre = new Chambre(retrievedidChambre, retrievednumChambre,retrievedtypeChambre,retrievedprixChambre,retrieveddescriptionChambre,retrievedstatutChambre);
+                return chambre;
+            }
         } catch (Exception ex) {
             ex.printStackTrace();
         }
         return null;
 
+    }
+
+    @Override
+    public void add(Chambre chambre) {
+        String query =  "INSERT INTO chambre(idChambre,numChambre, typeChambre, descriptionChambre, prixChambre" +
+                ",statutChambre) VALUES ("+ chambre.getIdChambre() +",'"+ chambre.getNumChambre() + "','" +
+                chambre.getTypeChambre() + "', '" + chambre.getDescriptionChambre()+"', "+chambre.getPrixChambre()+ ", '" + chambre.getStatutChambre()+"' )";
+
+        try {
+            Connection connection = dataSource.createConnection();
+            PreparedStatement statement = connection.prepareStatement(query);
+            statement.executeUpdate(query);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void delete(Chambre chambre) {
+        String query = "DELETE from chambre where idChambre = " + chambre.getIdChambre();
+
+
+        try {
+            Connection connection = dataSource.createConnection();
+            PreparedStatement statement = connection.prepareStatement(query);
+
+            //statement.setInt(1, chambre.getIdChambre());
+            statement.executeUpdate(query);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }

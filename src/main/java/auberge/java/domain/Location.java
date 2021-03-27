@@ -1,7 +1,6 @@
 package auberge.java.domain;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public class Location {
     private int idLocation;

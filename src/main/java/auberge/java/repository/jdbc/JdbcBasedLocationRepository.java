@@ -16,7 +16,7 @@ public class JdbcBasedLocationRepository implements ILocationRepository {
     public JdbcBasedLocationRepository(DataSource dataSource) {
         this.dataSource = dataSource;
     }
-@Override
+    @Override
     public Location[] getAll() {
         //requête sql pour récupèrer les infos
         String query = "SELECT * FROM location";
@@ -51,6 +51,7 @@ public class JdbcBasedLocationRepository implements ILocationRepository {
         }
 
     }
+
     @Override
     public Location getById(int id) {
         String query = "SELECT * from location where idLocation = ?";
@@ -60,20 +61,51 @@ public class JdbcBasedLocationRepository implements ILocationRepository {
 
             statement.setInt(1, id );
             ResultSet rs = statement.executeQuery();
-            int retrievedId = rs.getInt("idLocation");
-            String retrievednumeroLocation = rs.getString("numeroLocation");
+            if(rs.next())
+            {
+                int retrievedId = rs.getInt("idLocation");
+                String retrievednumeroLocation = rs.getString("numeroLocation");
 
-            LocalDate retrieveddateLocation = LocalDate.parse(rs.getString("dateLocation"),df);
-            LocalDate retrieveddateDepart   = LocalDate.parse(rs.getString("dateDepart"),df);
-            String retrievedchambre = rs.getString("chambre");
-            String retrievedclient = rs.getString("client");
+                LocalDate retrieveddateLocation = LocalDate.parse(rs.getString("dateLocation"),df);
+                LocalDate retrieveddateDepart   = LocalDate.parse(rs.getString("dateDepart"),df);
+                String retrievedchambre = rs.getString("chambre");
+                String retrievedclient = rs.getString("client");
 
-            Location location = new Location(retrievedId, retrievednumeroLocation,retrieveddateLocation,retrieveddateDepart,retrievedchambre,retrievedclient);
-            return location;
+                Location location = new Location(retrievedId, retrievednumeroLocation,retrieveddateLocation,retrieveddateDepart,retrievedchambre,retrievedclient);
+                return location;
+            }
         } catch (Exception ex) {
             ex.printStackTrace();
         }
         return null;
+    }
+    @Override
+    public void add(Location location) {
+        String query =  "INSERT INTO location(idLocation,numeroLocation, dateLocation, dateDepart, chambre" +
+                ",client) VALUES ("+ location.getIdLocation() +",'"+ location.getNumeroLocation() + "','" +
+                location.getDateDepart() + "', '" + location.getDateDepart()+"', '"+location.getChambre()+ "','" +
+                location.getClient()+"' )";
+
+        try {
+            Connection connection = dataSource.createConnection();
+            PreparedStatement statement = connection.prepareStatement(query);
+            statement.executeUpdate(query);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+    @Override
+    public void delete(Location location) {
+        String query = "DELETE from location where idLocation = " + location.getIdLocation();
+
+
+        try {
+            Connection connection = dataSource.createConnection();
+            PreparedStatement statement = connection.prepareStatement(query);
+            statement.executeUpdate(query);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
 }
